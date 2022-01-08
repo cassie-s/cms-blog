@@ -1,4 +1,4 @@
-# Note Taker
+# CMS Blog
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
   ## Description
   This application is a simple CMS blog. Authorized users can create posts, edit posts, delete posts, and comment on posts.
@@ -14,7 +14,7 @@
 
 
   ## Installation
-  Use the deployed version at: https://secret-mesa-68493.herokuapp.com/ or clone via Heroku.
+  Use the deployed version at: https://infinite-chamber-96968.herokuapp.com/ or clone via Heroku.
 
 
   ## Usage
