@@ -9,22 +9,26 @@ User.hasMany(Post, {
 
 // a post can only belong to one user 
 Post.belongsTo(User, {
-    foreignKey: 'user_id'
-})
+    foreignKey: 'user_id',
+    onDelete: 'SET NULL'
+});
 
 // a comment can only belong to one user 
 Comment.belongsTo(User, {
-    foreignKey: 'user_id'
+    foreignKey: 'user_id',
+    onDelete: 'SET NULL'
 });
 
 // a comment can only belong to one user 
 Comment.belongsTo(Post, {
-    foreignKey: 'post_id'
+    foreignKey: 'post_id',
+    onDelete: 'SET NULL'
 });
 
 // users can make many comments 
 User.hasMany(Comment, {
-    foreignKey: 'user_id'
+    foreignKey: 'user_id',
+    onDelete: 'SET NULL'
 });
 
 // users can make many posts 
